@@ -1,6 +1,11 @@
 let selectedCount = 0;
 let cardIndex = 999;
 
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    createCards();
+});
+
 function createCards() {
     const container = document.getElementById('cardContainer');
     const cardsData = [
@@ -585,5 +590,5 @@ function typeWriter() {
 typeWriter();
 }
 
-window.onload = createCards;
+
 
